@@ -27,7 +27,7 @@
         font-weight: 400;
         margin-top: 30px;
         margin: auto;
-        width: 40%;
+        width: 30%;
         display: block;
         text-align: center;
         padding: 25px 15px 35px 15px;
@@ -35,11 +35,12 @@
     }
 
     .surveyFormDesign {
-        display: inline-block;
+        display: block;
+        padding: 15px 25px 35px 25px;
         margin-left: auto;
         margin-right: auto;
         text-align: left;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     input {
@@ -48,7 +49,7 @@
     }
     
     input[type="text"], input[type="email"], input[type="number"] {
-        height: 30px;
+        height: 35px;
     }
     
     input[type="submit"] {
@@ -65,25 +66,21 @@
         font-size: 15px;
         font-weight: 500;
         color: #495057;
-        padding-left: 10px;
         }
     ::-moz-placeholder { /* Firefox 19+ */
         font-size: 15px;
         font-weight: 500;
         color: #495057;
-        padding-left: 10px;
     }
     :-ms-input-placeholder { /* IE 10+ */
         font-size: 15px;
         font-weight: 500;
         color: #495057;
-        padding-left: 10px;
     }
     :-moz-placeholder { /* Firefox 18- */
         font-size: 15px;
         font-weight: 500;
         color: #495057;
-        padding-left: 10px;
     } 
 
     .specificInputsDesign {
@@ -92,13 +89,27 @@
 
     .inputsDesign {
         margin-top: 5px;
+        margin-bottom: 25px;
+        padding: 5px 15px 5px 15px;
+    }
+
+    .radioInputDesign {
         margin-bottom: 10px;
     }
 
     .selectDesign {
-        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: 35px;
+        font-size: 15px;
+        padding-left: 10px;
         border: none;
         border-radius: 3px;
+    }
+
+    .checkboxDesign {
+        font-size: px;
+        margin: 10px;
     }
 
     .design {
@@ -145,15 +156,15 @@
                 </select>
                 <label for="doYouRecommend" style="display: block;" class="design">Would you recommend freeCodeCamp to a friend?</label>
                     <label for="Definitely" class="design radioDesign">
-                        <input type="radio" id="Definitely" name="user-recommend" value="Definitely">
+                        <input type="radio" id="Definitely" name="user-recommend" value="Definitely" class="radioInputDesign">
                         Definitely
                     </label>
                     <label for="Maybe" class="design radioDesign">
-                        <input type="radio" id="Maybe" name="user-recommend" value="Maybe">
+                        <input type="radio" id="Maybe" name="user-recommend" value="Maybe" class="radioInputDesign">
                         Maybe
                     </label>
                     <label for="Not-sure" class="design radioDesign">
-                        <input type="radio" id="Not-sure" name="user-recommend" value="Not-sure">
+                        <input type="radio" id="Not-sure" name="user-recommend" value="Not-sure" class="radioInputDesign">
                         Not-sure
                     </label>
                 <label for="FavFeature" class="design">What is your favorite feature of freeCodeCamp?</label>
@@ -166,31 +177,31 @@
                 </select>
                 <label class="design">What would you like to see improved? (Check all that apply)
                     <lebel for="frontend" class="radioDesign design">
-                        <input type="checkbox" id="frprojects" name="frprojects" value="frprojects">
+                        <input type="checkbox" id="frprojects" name="frprojects" value="frprojects" class="checkboxDesign">
                         Front-end Projects
                     </lebel>
                     <lebel for="BeProjects" class="radioDesign design">
-                        <input type="checkbox" id="BeProjects" name="BeProjects" value="2">
+                        <input type="checkbox" id="BeProjects" name="BeProjects" value="2" class="checkboxDesign">
                         Back-end Projects
                     </lebel>
                     <lebel for="DvProjects" class="radioDesign design">
-                        <input type="checkbox" id="DvProjects" name="DvProjects" value="3">
+                        <input type="checkbox" id="DvProjects" name="DvProjects" value="3" class="checkboxDesign">
                         Data Visualization
                     </lebel>
                     <lebel for="challengesProjects" class="radioDesign design">
-                        <input type="checkbox" id="challengesProjects" name="challengesProjects" value="4">
+                        <input type="checkbox" id="challengesProjects" name="challengesProjects" value="4" class="checkboxDesign">
                         Challenges
                     </lebel>
                     <lebel for="OSCommunity" class="radioDesign design">
-                        <input type="checkbox" id="OSCommunity" name="OSCommunity" value="5">
+                        <input type="checkbox" id="OSCommunity" name="OSCommunity" value="5" class="checkboxDesign">
                         Open Source Community
                     </lebel>
                     <lebel for="ghRooms" class="radioDesign design">
-                        <input type="checkbox" id="ghRooms" name="ghRooms" value="6">
+                        <input type="checkbox" id="ghRooms" name="ghRooms" value="6" class="checkboxDesign">
                         Gitter help rooms
                     </lebel> 
                     <lebel for="videosFeature" class="radioDesign design">
-                        <input type="checkbox" id="videosFeature" name="videosFeature" value="7">
+                        <input type="checkbox" id="videosFeature" name="videosFeature" value="7" class="checkboxDesign">
                         Videos
                     </lebel>
             </label>
